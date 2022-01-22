@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <h2>Profile Page</h2>
+    <div><form action="/ratings/new" method="get">{% csrf_token %}
+        <button type="submit">New rating</button>
+    </form></div>
+    <div><form action="/whiskies/new" method="get">{% csrf_token %}
+        <button type="submit">New whisky</button>
+    </form></div>
+</body>
+</html>

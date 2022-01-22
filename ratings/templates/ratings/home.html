@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ratings</title>
+</head>
+<body>
+    <h2>Ratings</h2>
+    {% for rating in ratings %}
+        <div>
+        {{ rating.whisky.name }}: {{ rating.nose |floatformat:1}}:{{ rating.taste }}:
+            {{ rating.color }}:{{ rating.author.username }}
+        </div>
+    {% endfor %}
+</body>
+</html>
